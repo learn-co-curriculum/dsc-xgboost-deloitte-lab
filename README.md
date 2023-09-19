@@ -920,7 +920,7 @@ features = None
 
 
 ```python
-# __SOLUTION
+# __SOLUTION__
 # select the brand, price, weekday, category_level1, cateogry_level2, and activity_count features
 
 features = downsampled.loc[
