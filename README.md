@@ -513,6 +513,23 @@ df_targets["is_purchased"] = df_targets.groupby(["user_session", "product_id"])[
 
 ## Resampling training set
 
+
+```python
+# select the brand, price, weekday, category_level1, cateogry_level2, and activity_count features
+
+features = downsampled.loc[
+    :,
+    [
+        "brand",
+        "price",
+        "weekday",
+        "category_level1",
+        "category_level2",
+        "activity_count",
+    ],
+]
+```
+
 ## Encode categorical variables
 
 ## Split the data
